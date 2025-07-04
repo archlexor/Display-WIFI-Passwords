@@ -32,3 +32,5 @@ This will show you the password under Security settings,  Key Content = 'wifi_pa
                     Password = $password
                 }
             } | Out-File -FilePath "$env:USERPROFILE\Downloads\pass.txt"
+
+This will save the passwords into your Downloads directory.
