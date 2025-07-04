@@ -16,4 +16,19 @@ ssid = your saved networks names/aps. <br>
 This will show you the password under Security settings,  Key Content = 'wifi_password' <br>
 <br>
 
-If you want to saved the output to a file you can use this code below: 
+            If you want to saved the output to a file you can use this code below: 
+
+            # Retrieves all saved Wi-Fi SSIDs and stores them in $ssids
+            $ssids = (netsh wlan show profiles | Select-String ': ' ) -replace ".*:\s+"
+
+            foreach($ssid in $ssids){
+
+                # Retrieves the saved Wi-Fi password for each SSID
+                $password = (netsh wlan show profiles name=$SSID key=clear | Select-String 'Key Content') -replace ".*:\s+"
+
+                # Creates a custom object (hashtable-like) containing the SSID and its corresponding password
+                [PSCustomObject]@{
+                    SSID = $ssid
+                    Password = $password
+                }
+            } | OUT-FILE -FilePath "$env:USERPROFILE\Downloads\pass.txt"
