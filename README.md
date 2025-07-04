@@ -55,9 +55,12 @@ use this to filter out just the password
 ```
 sudo cat <ssid>.nmconnection | awk -F: '/^psk/'
 ```
+✅ This should work on most Linux distributions that use NetworkManager (e.g., Kali, Ubuntu, Fedora).
+⚠️ However, there might be exceptions depending on:
 
-there might be a case where this won't work depending on different environment. There is a tool called nmcli that does  get the job done however in most distribution nmcli isn't preinstalled
-I'm using kali linux, I do believe that in most distro this will work tho.
+💡 Tip: The tool `nmcli` can also retrieve saved network information:
+Example: `nmcli connection show` or `nmcli -s -g 802-11-wireless-security.psk connection show <profile>`
+But note that `nmcli` is not preinstalled on all minimal distros — though it is available in Kali Linux.
 
 
 
