@@ -49,7 +49,11 @@ now all you have to do is:
 ```
 sudo cat <ssid>.nmconnection
 ```
-
+you will see a bunch of information however the required password is labeled as psk='password'
+use this to filter out just the password 
+```
+sudo cat <ssid>.nmconnection | awk -F: '/^psk {print $1}'
+```
 
 
 
