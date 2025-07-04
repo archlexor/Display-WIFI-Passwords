@@ -37,6 +37,6 @@ This will save the passwords into your Downloads directory.
 
 
 
-# For Linux(bash) 
+## For Linux(bash) 
 To view content of /etc/NetworkManager/system-connections/ directory you will need to have root privelage.
 
