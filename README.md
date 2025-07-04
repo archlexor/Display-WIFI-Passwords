@@ -1,7 +1,7 @@
 # Display-WIFI-Passwords
 Linux/Windows
 
-## For Windows(powershell)
+For Windows(powershell)
 --------------------------------------------
 To view all the networks that your computer has previously connnected to: 
 ```
@@ -34,9 +34,23 @@ foreach($ssid in $ssids){
 ```
 This will save the passwords into your Downloads directory.
 
-
-
-
 ## For Linux(bash) 
 To view content of /etc/NetworkManager/system-connections/ directory you will need to have root privelage.
+
+do 
+```
+cd /etc/NetworkManager/system-connections/
+```
+if you do ls to list the files you will see bunch of saved networks profile 
+```
+ls
+```
+now all you have to do is: 
+```
+sudo cat <ssid>.nmconnection
+```
+
+
+
+
 
