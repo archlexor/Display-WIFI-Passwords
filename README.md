@@ -33,3 +33,8 @@ foreach($ssid in $ssids){
 } | Out-File -FilePath "$env:USERPROFILE\Downloads\pass.txt"
 ```
 This will save the passwords into your Downloads directory.
+
+<br>
+<b>For Linux(bash)</b>
+To view content of /etc/NetworkManager/system-connections/ directory you will need to have root privelage.
+
