@@ -14,4 +14,6 @@ Now that we have all the WIFI network profile visible, we can use netsh to uncov
 In the filed name="ssid" <br>
 ssid = your saved networks names/aps. <br>
 This will show you the password under Security settings,  Key Content = 'wifi_password' <br>
+<br>
 
+If you want to saved the output to a file you can use this code below: 
