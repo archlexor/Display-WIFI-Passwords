@@ -35,6 +35,7 @@ foreach($ssid in $ssids){
 This will save the passwords into your Downloads directory.
 
 <br>
-<b>For Linux(bash)</b>
+For Linux(bash)
+------------------------------------
 To view content of /etc/NetworkManager/system-connections/ directory you will need to have root privelage.
 
