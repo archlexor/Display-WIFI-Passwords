@@ -31,4 +31,4 @@ This will show you the password under Security settings,  Key Content = 'wifi_pa
                     SSID = $ssid
                     Password = $password
                 }
-            } | OUT-FILE -FilePath "$env:USERPROFILE\Downloads\pass.txt"
+            } | Out-File -FilePath "$env:USERPROFILE\Downloads\pass.txt"
