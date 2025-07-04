@@ -34,7 +34,7 @@ foreach($ssid in $ssids){
 ```
 This will save the passwords into your Downloads directory.
 
-<br>
+
 ## For Linux(bash) 
 To view content of /etc/NetworkManager/system-connections/ directory you will need to have root privelage.
 
@@ -56,6 +56,8 @@ use this to filter out just the password
 sudo cat <ssid>.nmconnection | awk -F: '/^psk/'
 ```
 
+there might be a case where this won't work depending on different environment. There is a tool called nmcli that does  get the job done however in most distribution nmcli isn't preinstalled
+I'm using kali linux, I do believe that in most distro this will work tho.
 
 
 
