@@ -1,7 +1,7 @@
 # Display-WIFI-Passwords
 Linux/Windows
 
-For Windows
+For Windows(powershell)
 --------------------------------------------
 To view all the networks that your computer has previously connnected to: 
 ```
