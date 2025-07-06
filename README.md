@@ -55,7 +55,7 @@ use this to filter out just the password
 ```
 sudo cat <ssid>.nmconnection | awk -F: '/^psk/'
 ```
-This should work on most Linux distributions that use NetworkManager (e.g., Kali, Ubuntu, Fedora).
+This should work on most Linux distributions that use NetworkManager (e.g., Kali, Ubuntu, Fedora)and maybe more.
 However, there might be exceptions.
 
 💡 Tip: The tool `nmcli` can also retrieve saved network information:
